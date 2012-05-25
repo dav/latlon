@@ -15,6 +15,7 @@
 		57E279CE156F2C1D00435FF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E279CD156F2C1D00435FF0 /* AppDelegate.m */; };
 		57E279D1156F2C1D00435FF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E279D0156F2C1D00435FF0 /* ViewController.m */; };
 		57E279D4156F2C1D00435FF0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E279D2156F2C1D00435FF0 /* ViewController.xib */; };
+		57E27A15156F2C6200435FF0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E27A14156F2C6200435FF0 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,16 @@
 		57E279BD156F2C1D00435FF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		57E279BF156F2C1D00435FF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57E279C1156F2C1D00435FF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		57E279C5156F2C1D00435FF0 /* LatLon-Info.plist */ = {isa = PBXFileReference; path = "LatLon-Info.plist"; sourceTree = "<group>"; };
+		57E279C5156F2C1D00435FF0 /* LatLon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LatLon-Info.plist"; sourceTree = "<group>"; };
 		57E279C7156F2C1D00435FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		57E279C9156F2C1D00435FF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		57E279CB156F2C1D00435FF0 /* LatLon-Prefix.pch */ = {isa = PBXFileReference; path = "LatLon-Prefix.pch"; sourceTree = "<group>"; };
-		57E279CC156F2C1D00435FF0 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		57E279CB156F2C1D00435FF0 /* LatLon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LatLon-Prefix.pch"; sourceTree = "<group>"; };
+		57E279CC156F2C1D00435FF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		57E279CD156F2C1D00435FF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		57E279CF156F2C1D00435FF0 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		57E279CF156F2C1D00435FF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		57E279D0156F2C1D00435FF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		57E279D3156F2C1D00435FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		57E27A14156F2C6200435FF0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E27A15156F2C6200435FF0 /* CoreLocation.framework in Frameworks */,
 				57E279BE156F2C1D00435FF0 /* UIKit.framework in Frameworks */,
 				57E279C0156F2C1D00435FF0 /* Foundation.framework in Frameworks */,
 				57E279C2156F2C1D00435FF0 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +70,7 @@
 		57E279BC156F2C1D00435FF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57E27A14156F2C6200435FF0 /* CoreLocation.framework */,
 				57E279BD156F2C1D00435FF0 /* UIKit.framework */,
 				57E279BF156F2C1D00435FF0 /* Foundation.framework */,
 				57E279C1156F2C1D00435FF0 /* CoreGraphics.framework */,
@@ -240,6 +244,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LatLon/LatLon-Prefix.pch";
 				INFOPLIST_FILE = "LatLon/LatLon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -251,6 +256,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LatLon/LatLon-Prefix.pch";
 				INFOPLIST_FILE = "LatLon/LatLon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -10,4 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property IBOutlet UILabel* coordinatesLabel;
+@property IBOutlet UIButton* refreshButton;
+
+- (IBAction) refreshTapped:(id)sender;
+
 @end
